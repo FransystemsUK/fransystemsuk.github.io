@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cost saving analysis | Fransystems DevOps</title>
+  <meta name="description" content="Cloud cost analysis for AWS and Azure. Right-sizing, unused resources, and architecture that spends less without cutting reliability.">
+  <meta name="theme-color" content="#0c264c">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Fransystems DevOps" width="282" height="267">
+      </a>
+      <nav class="tabs" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="cost.html" aria-current="page">Cost analysis</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="security.html">Security</a>
+        <a href="terraform.html">Terraform</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="index.html">Home</a> / Cost analysis</p>
+        <h1>Cost saving analysis</h1>
+        <p class="lede">A clear reading of what the AWS or Azure bill is buying, and which changes reduce spend without making the platform fragile.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <article class="panel">
+          <h2>What the review covers</h2>
+          <ul>
+            <li>Compute and platform services that are larger than the workload</li>
+            <li>Resources that are unused, forgotten, or left behind by an old environment</li>
+            <li>Architecture that is expensive because of its shape, not because of demand</li>
+            <li>Non-production that runs as if it were production</li>
+            <li>Commitment options, looked at after the waste is visible, not before</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>What you receive</h2>
+          <ul>
+            <li>A prioritised list of changes, not a dump of the billing console</li>
+            <li>The reliability consequence of each change, stated plainly</li>
+            <li>Which items are safe to do this week, and which need a design change</li>
+            <li>Enough detail for your own team to implement, or for Fransystems to build it in Terraform</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="wrap prose">
+        <h2>AWS and Azure, on the same engagement if needed</h2>
+        <p>Cost work at Fransystems comes from running both clouds, not from a single vendor playbook. On AWS that includes multi-account estates, EC2, ECS, EKS, and Lambda. On Azure it includes App Services, WebJobs, Functions, and virtual machines. The same questions apply on both: what is idle, what is oversized, and what would a simpler design stop paying for every month.</p>
+        <p>Neil has done this continuously alongside delivery, including while bringing platforms under Terraform. A saving that depends on a console click nobody will repeat is not the preference. Where the change belongs in code, it can be done that way. The <a href="terraform.html">Terraform</a> page describes that work. The <a href="architecture.html">architecture</a> page covers the cases where the bill is a symptom of the design.</p>
+        <p>This is not a race to the smallest possible invoice. Reliability stays in the recommendation. A cheaper design that pages someone every night is not a saving.</p>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div class="wrap">
+        <p>If you want a bill read against the estate that produced it, start from the contact page.</p>
+        <a class="button" href="contact.html">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>Fransystems DevOps. Freelance contracting for AWS and Azure. United Kingdom.</p>
+      <a href="contact.html">Contact me</a>
+    </div>
+  </footer>
+</body>
+</html>

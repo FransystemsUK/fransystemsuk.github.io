@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terraform and infrastructure as code | Fransystems DevOps</title>
+  <meta name="description" content="Terraform for AWS and Azure. New platforms, existing estates brought under code, GitOps, and CI/CD with a rollback path.">
+  <meta name="theme-color" content="#0c264c">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Fransystems DevOps" width="282" height="267">
+      </a>
+      <nav class="tabs" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="cost.html">Cost analysis</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="security.html">Security</a>
+        <a href="terraform.html" aria-current="page">Terraform</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="index.html">Home</a> / Terraform</p>
+        <h1>Infrastructure as code, in Terraform</h1>
+        <p class="lede">AWS and Azure described in code a team can change. New builds, and estates that are still a mixture of consoles, scripts, and memory.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <article class="panel">
+          <h2>New platforms and adopted ones</h2>
+          <ul>
+            <li>Modular Terraform, so the next service is not a copy of a thousand-line file</li>
+            <li>GitOps layering, so environment differences are deliberate</li>
+            <li>Multi-account AWS, including ECS, EKS, Lambda, and the network around them</li>
+            <li>Azure PaaS brought under code: App Services, WebJobs, Functions, and the related platform</li>
+            <li>A layout another engineer can review without a guided tour</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>The pipeline that sits on the code</h2>
+          <ul>
+            <li>Azure DevOps, AWS CodePipeline, and Bitbucket Pipelines</li>
+            <li>Promotions that are the same path every time</li>
+            <li>Quality gates that can actually fail a release</li>
+            <li>A rollback that has been thought about before it is needed</li>
+            <li>Manifest and artefact deployment, not only infrastructure</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="wrap prose">
+        <h2>HashiCorp certified, and already in production</h2>
+        <p>Neil holds the HashiCorp Certified Terraform Associate credential. The production record is a multi-account AWS organisation and a globally distributed Azure PaaS platform, both governed through modular Terraform and GitOps, plus full AWS environments delivered with Terraform, CodePipeline, and Bitbucket. At Fransystems that is the core of the practice: design, build, and manage both clouds as code.</p>
+        <p>Bringing an existing platform under Terraform is often the more useful engagement. The Azure work that matches this most closely is App Services and WebJobs that were moved under code, with Azure DevOps pipelines for what gets deployed on top. The point is an estate the team can change on purpose.</p>
+        <p>Code follows a decision. If the target shape is still open, start with <a href="architecture.html">architectural advice</a>. If the code also needs to close an access path or a secret-handling gap, that is <a href="security.html">security</a> work in the same change. If you are not sure the current design should be codified as it stands, a <a href="cost.html">cost review</a> can come first.</p>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div class="wrap">
+        <p>Say whether this is a new build or an estate that needs to come under code. The contact page is the next step.</p>
+        <a class="button" href="contact.html">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>Fransystems DevOps. Freelance contracting for AWS and Azure. United Kingdom.</p>
+      <a href="contact.html">Contact me</a>
+    </div>
+  </footer>
+</body>
+</html>

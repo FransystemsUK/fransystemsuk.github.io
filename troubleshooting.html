@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud troubleshooting | Fransystems DevOps</title>
+  <meta name="description" content="Production troubleshooting across AWS, Azure, Linux, Docker, and Kubernetes, with a fix that stops the same incident returning.">
+  <meta name="theme-color" content="#0c264c">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Fransystems DevOps" width="282" height="267">
+      </a>
+      <nav class="tabs" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="cost.html">Cost analysis</a>
+        <a href="troubleshooting.html" aria-current="page">Troubleshooting</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="security.html">Security</a>
+        <a href="terraform.html">Terraform</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="index.html">Home</a> / Troubleshooting</p>
+        <h1>Cloud troubleshooting</h1>
+        <p class="lede">Production faults that cross the console, the host, the container, and the pipeline. The aim is a restored service and a reason it should not fail the same way again.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <article class="panel">
+          <h2>Where the fault usually sits</h2>
+          <ul>
+            <li>AWS and Azure configuration that drifted from what people believe is deployed</li>
+            <li>Linux hosts, including estates large enough that one snowflake server matters</li>
+            <li>Docker, ECS microservices, and Kubernetes on EKS, AKS, or on-premises clusters</li>
+            <li>Azure App Services, WebJobs, Functions, and the way they are released</li>
+            <li>CI/CD that promoted something it should have stopped</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>What you leave with</h2>
+          <ul>
+            <li>The cause, separated from the symptoms that showed up in the alert</li>
+            <li>The change that restores service, made in a way the team can see</li>
+            <li>A runbook note or a permanent fix, so the same escalation does not return next week</li>
+            <li>A view on whether the design itself is what made the fault hard to see</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="wrap prose">
+        <h2>This is an operations background, not a workshop exercise</h2>
+        <p>Neil spent eight years as senior third-line support in enterprise telecommunications, operating Linux session border controllers for accounts including HMRC and Barclays, and writing more than 1,000 technical processes so repeat escalations dropped. He then ran incidents across a contact-centre platform and a hosted telephony estate, with deep-dive troubleshooting on AWS, Linux, Docker, and Kubernetes, and a Linux estate of more than 200 servers.</p>
+        <p>More recently that has meant EKS services and ECS on EC2, plus Azure PaaS, with CloudWatch, CloudTrail, Azure Monitor, the Elastic Stack, and OpenSearch as the places evidence actually lives.</p>
+        <p>Call this when a live fault needs a senior engineer, or when the same fault keeps coming back and the team is tired of restoring service without knowing why. If the answer is a platform change rather than another restart, the <a href="architecture.html">architecture</a> and <a href="terraform.html">Terraform</a> pages describe the follow-on work.</p>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div class="wrap">
+        <p>Describe the fault, the cloud, and how long it has been hurting. The contact page is the place to do that.</p>
+        <a class="button" href="contact.html">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>Fransystems DevOps. Freelance contracting for AWS and Azure. United Kingdom.</p>
+      <a href="contact.html">Contact me</a>
+    </div>
+  </footer>
+</body>
+</html>
