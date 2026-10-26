@@ -126,50 +126,16 @@ a:hover {
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex: 0 1 auto;
-  min-width: 0;
-  text-decoration: none;
-  color: var(--ink);
-}
-
-.brand-type {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.02;
-  min-width: 0;
-}
-
-.brand-name {
-  font-size: 1.7rem;
-  font-weight: 600;
-  letter-spacing: -0.035em;
-  color: var(--ink);
-}
-
-.brand-role {
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--blue);
-}
-
-.brand:hover .brand-name {
-  color: var(--blue-deep);
-}
-
-.brand-marks {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  display: block;
   flex: 0 0 auto;
+  line-height: 0;
 }
 
-.brand-marks svg {
-  width: 32px;
-  height: 32px;
+.brand-lockup,
+.footer-brand img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -694,12 +660,6 @@ h3 {
   line-height: 0;
 }
 
-.footer-brand img {
-  width: min(280px, 100%);
-  height: auto;
-  display: block;
-}
-
 .footer-copy {
   display: flex;
   flex-direction: column;
@@ -755,14 +715,6 @@ h3 {
   .footer-copy {
     align-items: flex-start;
     text-align: left;
-  }
-
-  .brand-name {
-    font-size: 1.45rem;
-  }
-
-  .brand-role {
-    font-size: 1.05rem;
   }
 
   .hero,
