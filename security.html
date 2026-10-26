@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Security recommendations | Fransystems DevOps</title>
-  <meta name="description" content="Security recommendations for AWS and Azure: IAM, network controls, secrets, hardening, and audit-ready change.">
+  <meta name="description" content="Security advice across the architecture for AWS and Azure. Attackers are already using AI. Fransystems advises on AI-based testing of the security posture, before the next breach.">
   <meta name="theme-color" content="#0c264c">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,44 @@
     </section>
 
     <section class="section">
-      <div class="wrap split">
+      <div class="wrap">
+        <h2>What a breach already costs</h2>
+        <p class="narrow">These are published figures, not a forecast for your estate. They are what “we will harden it later” is being weighed against.</p>
+        <ul class="facts">
+          <li>
+            <strong>$4.44 million</strong>
+            <p>is the global average cost of a data breach. In the same study the UK average was $4.14 million, about £3.1 million.</p>
+          </li>
+          <li>
+            <strong>£300 million</strong>
+            <p>is what Marks &amp; Spencer estimated the 2025 attack would take from operating profit. Online clothing orders stopped. Stores fell back on paper.</p>
+          </li>
+          <li>
+            <strong>30%</strong>
+            <p>of UK micro businesses say cyber security is a low priority for senior managers. Only 21% have a formal incident response plan.</p>
+          </li>
+        </ul>
+        <p class="source">IBM, Cost of a Data Breach Report 2025, with Ponemon Institute: global average $4.44 million, United Kingdom $4.14 million. The sterling figure is that UK average at about 75 pence to the dollar. The same report found that 16% of breaches involved attackers using AI, most often for phishing and deepfake impersonation, and that 13% of organisations reported a breach of an AI model or application. Of those, 97% lacked proper AI access controls. Marks &amp; Spencer, May 2025 market statement, and preliminary results for the year to 28 March 2026: direct incident costs £131.3 million, insurance proceeds £100 million, adjusted profit before tax down 23.8%. UK Department for Science, Innovation and Technology, Cyber Security Breaches Survey 2025/26: 43% of businesses, about 612,000, identified a breach or attack in the previous year. Among micro businesses, 42% did. Small businesses, 46%.</p>
+        <aside class="result">
+          <p>Many smaller firms update the security posture later, because the product comes first. Can you wait? Almost a third of UK micro businesses already treat this as a low priority, and the attackers are not on the roadmap. Marks &amp; Spencer was not a startup with no time, and the year still closed with a 23.8% fall in adjusted profit after the insurance money.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="wrap prose">
+        <h2>In the AI age, the test has changed</h2>
+        <p>This is no longer a future risk. IBM found that 16% of the breaches in its 2025 study involved attackers using AI, most often to write phishing and to impersonate people with deepfakes. Thirteen percent of organisations reported a breach of an AI model or application, and 97% of that group lacked proper access controls on the AI. Those numbers will rise. The tools are already cheap, and the attacks that worked this year will be copied.</p>
+        <p>A posture tested by hand, once a year, against a checklist written before this, will not see the next one. You either adopt AI-based testing of the security posture, or you fail the test an attacker is already running.</p>
+        <p>Fransystems gives comprehensive advice on securing the systems through the whole architecture: identity, network, platform, pipeline, data, and the AI tools the team has already started using. The advice is tied to this estate, and it can be built into Terraform and the release path where that is the control that will actually hold.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>What Fransystems looks at before later arrives</h2>
+        <p class="narrow">The work is the posture of the estate you are already running: who can change production, what the network allows, where the secrets live, and whether a change can be evidenced. It is ordered so the first items close the exposure that cannot wait for the next release.</p>
+        <div class="split">
         <article class="panel">
           <h2>What gets looked at</h2>
           <ul>
@@ -61,14 +98,15 @@
             <li>Honest about what is a configuration change and what is a design change</li>
           </ul>
         </article>
+        </div>
       </div>
     </section>
 
     <section class="section band">
       <div class="wrap prose">
         <h2>Public-sector delivery and long-running operations</h2>
-        <p>Neil is security-cleared and has delivered into Ministry of Defence environments, including two MoD environments inside a wider dual-cloud estate. Earlier, he operated Linux-based session border controllers for enterprise accounts including HMRC and Barclays, covering security policy and production change on global network interconnects.</p>
-        <p>That background is operational. The offer here is recommendations and, where you want it, the implementation of those controls. It is not a penetration test and it is not a compliance certificate. If the gap is architectural, it belongs with the <a href="architecture.html">architecture</a> work. If the gap is an estate that cannot be changed safely because it is not in code, it belongs with <a href="terraform.html">Terraform</a>.</p>
+        <p>Fransystems specialists are security-cleared. Every working day they deploy into Ministry of Defence cloud held to some of the strictest security in government, including two MoD environments inside a wider dual-cloud estate. In plain terms: the access is tight, the change is checked, and a mistake is not something you discover in a newspaper. Earlier work included Linux session border controllers for accounts including HMRC and Barclays, covering security policy and production change on global network interconnects.</p>
+        <p>That standard is what a smaller business can use without building a government programme. The offer is recommendations and, where you want it, the implementation of those controls: who can get in, what the network allows, and a change you can account for. It is not a penetration test and it is not a compliance certificate. If the gap is architectural, it belongs with the <a href="architecture.html">architecture</a> work. If the gap is an estate that cannot be changed safely because it is not in code, it belongs with <a href="terraform.html">Terraform</a>.</p>
       </div>
     </section>
 

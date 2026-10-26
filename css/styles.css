@@ -1,3 +1,9 @@
+@property --page-gutter {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 18px;
+}
+
 :root {
   --ink: #041536;
   --navy: #0c264c;
@@ -23,12 +29,58 @@ html {
 }
 
 body {
+  --page-gutter: max(18px, calc((100% - var(--max)) / 2));
   margin: 0;
   font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.6;
   font-size: 1.05rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    url("../assets/mark-aws.svg"),
+    url("../assets/mark-azure.svg"),
+    url("../assets/mark-azure.svg"),
+    url("../assets/mark-aws.svg");
+  background-repeat: no-repeat;
+  background-position:
+    right calc(var(--page-gutter) - 292px) top 18%,
+    left calc(var(--page-gutter) - 214px) top 46%,
+    right calc(var(--page-gutter) - 154px) top 74%,
+    left calc(var(--page-gutter) - 178px) top 84%;
+  background-size: 300px auto, 220px auto, 150px auto, 180px auto;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    #000 0,
+    #000 calc(var(--page-gutter) - 24px),
+    transparent calc(var(--page-gutter) - 2px),
+    transparent calc(100% - var(--page-gutter) + 2px),
+    #000 calc(100% - var(--page-gutter) + 24px),
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    #000 0,
+    #000 calc(var(--page-gutter) - 24px),
+    transparent calc(var(--page-gutter) - 2px),
+    transparent calc(100% - var(--page-gutter) + 2px),
+    #000 calc(100% - var(--page-gutter) + 24px),
+    #000 100%
+  );
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 
 img {
@@ -132,10 +184,55 @@ a:hover {
 
 .hero,
 .page-hero {
+  position: relative;
+  isolation: isolate;
   background:
     radial-gradient(900px 280px at 100% 0%, rgba(0, 110, 236, 0.28), transparent 60%),
     linear-gradient(180deg, #0c264c 0%, #041536 100%);
   color: #fff;
+}
+
+.hero::before,
+.page-hero::before,
+.callout::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    url("../assets/mark-aws-dark.svg"),
+    url("../assets/mark-azure-dark.svg");
+  background-repeat: no-repeat;
+  background-position:
+    right calc(var(--page-gutter) - 274px) center,
+    left calc(var(--page-gutter) - 204px) center;
+  background-size: 280px auto, 210px auto;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    #000 0,
+    #000 calc(var(--page-gutter) - 24px),
+    transparent calc(var(--page-gutter) - 2px),
+    transparent calc(100% - var(--page-gutter) + 2px),
+    #000 calc(100% - var(--page-gutter) + 24px),
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    #000 0,
+    #000 calc(var(--page-gutter) - 24px),
+    transparent calc(var(--page-gutter) - 2px),
+    transparent calc(100% - var(--page-gutter) + 2px),
+    #000 calc(100% - var(--page-gutter) + 24px),
+    #000 100%
+  );
+}
+
+.hero > .wrap,
+.page-hero > .wrap,
+.callout > .wrap {
+  position: relative;
+  z-index: 1;
 }
 
 .hero {
@@ -406,6 +503,59 @@ h3 {
   white-space: nowrap;
 }
 
+.facts {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0 0;
+  padding: 0;
+}
+
+.facts li {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 18px 18px 16px;
+}
+
+.facts strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--navy);
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.facts p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.source {
+  margin: 16px 0 0;
+  max-width: 75ch;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.result {
+  margin-top: 28px;
+  padding: 22px 24px;
+  background: var(--navy);
+  color: #fff;
+}
+
+.result p {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 1.12rem;
+}
+
+.result strong {
+  font-weight: 600;
+}
+
 .qual-grid,
 .split {
   display: grid;
@@ -446,6 +596,8 @@ h3 {
 }
 
 .callout {
+  position: relative;
+  isolation: isolate;
   background: var(--navy);
   color: #fff;
   padding: 36px 0;
@@ -527,6 +679,7 @@ h3 {
 
   .hero-grid,
   .timeline li,
+  .facts,
   .qual-grid,
   .split,
   .callout .wrap,
@@ -554,6 +707,30 @@ h3 {
   .hero,
   .section {
     padding: 48px 0;
+  }
+
+  body::before,
+  .hero::before,
+  .page-hero::before,
+  .callout::before {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  body::before {
+    background-position:
+      right -78px 18%,
+      left -70px 62%,
+      right -48px 100%,
+      left -46px 100%;
+    background-size: 140px auto, 110px auto, 90px auto, 80px auto;
+  }
+
+  .hero::before,
+  .page-hero::before,
+  .callout::before {
+    background-position: right -72px center, left -64px center;
+    background-size: 130px auto, 110px auto;
   }
 }
 

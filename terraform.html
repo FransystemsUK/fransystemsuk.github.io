@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terraform and infrastructure as code | Fransystems DevOps</title>
-  <meta name="description" content="Terraform for AWS and Azure. New platforms, existing estates brought under code, GitOps, and CI/CD with a rollback path.">
+  <meta name="description" content="Terraform for a well-architected AWS or Azure estate: resilient, scalable, and deployed the same way every time. Fransystems designs and builds it as code.">
   <meta name="theme-color" content="#0c264c">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,48 +35,84 @@
     <section class="page-hero">
       <div class="wrap">
         <p class="crumb"><a href="index.html">Home</a> / Terraform</p>
-        <h1>Infrastructure as code, in Terraform</h1>
-        <p class="lede">AWS and Azure described in code a team can change. New builds, and estates that are still a mixture of consoles, scripts, and memory.</p>
+        <h1>A well-architected estate, written in Terraform</h1>
+        <p class="lede">Infrastructure as code is how a network stays resilient, scales without a rebuild, and deploys the same way every time. Fransystems designs and builds that on AWS and Azure.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap split">
-        <article class="panel">
-          <h2>New platforms and adopted ones</h2>
-          <ul>
-            <li>Modular Terraform, so the next service is not a copy of a thousand-line file</li>
-            <li>GitOps layering, so environment differences are deliberate</li>
-            <li>Multi-account AWS, including ECS, EKS, Lambda, and the network around them</li>
-            <li>Azure PaaS brought under code: App Services, WebJobs, Functions, and the related platform</li>
-            <li>A layout another engineer can review without a guided tour</li>
-          </ul>
-        </article>
-        <article class="panel">
-          <h2>The pipeline that sits on the code</h2>
-          <ul>
-            <li>Azure DevOps, AWS CodePipeline, and Bitbucket Pipelines</li>
-            <li>Promotions that are the same path every time</li>
-            <li>Quality gates that can actually fail a release</li>
-            <li>A rollback that has been thought about before it is needed</li>
-            <li>Manifest and artefact deployment, not only infrastructure</li>
-          </ul>
-        </article>
+      <div class="wrap">
+        <h2>What the code buys you</h2>
+        <p class="narrow">A console build works until the person who clicked it is away. Terraform keeps the well-architected shape: the network, the accounts, and the platform are a reviewed change, not a memory.</p>
+        <ul class="facts">
+          <li>
+            <strong>Resilient</strong>
+            <p>Failure is a known state you can rebuild. Redundancy, boundaries, and the path back are in the design, not invented during the incident.</p>
+          </li>
+          <li>
+            <strong>Scalable</strong>
+            <p>The next account, region, or service is another use of the module. Capacity grows by changing the code, not by copying last quarter’s setup.</p>
+          </li>
+          <li>
+            <strong>Deployable</strong>
+            <p>One pipeline promotes the change. Development, test, and production follow the same path, so a release is repeatable and a rollback is the previous version.</p>
+          </li>
+          <li>
+            <strong>Secure</strong>
+            <p>Identity, network rules, and secrets are in the review. A hole does not hide in a click nobody documented.</p>
+          </li>
+          <li>
+            <strong>Recoverable</strong>
+            <p>The estate can be stood up again from the repository. Disaster recovery is a plan you have already run, not a document from last year.</p>
+          </li>
+          <li>
+            <strong>Efficient</strong>
+            <p>What exists is what the code says exists. Idle environments and one-off exceptions show up, which is where the <a href="cost.html">cost</a> work starts.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="section band">
+      <div class="wrap">
+        <h2>How Fransystems builds it</h2>
+        <p class="narrow">New platforms, and estates that are still a mixture of consoles and scripts. The result is modular Terraform a second engineer can change, with a pipeline that can refuse a bad release.</p>
+        <div class="split">
+          <article class="panel">
+            <h2>The estate</h2>
+            <ul>
+              <li>Landing zones, networks, and the accounts or subscriptions around them</li>
+              <li>AWS: multi-account layouts, ECS, EKS, Lambda, and the network they sit on</li>
+              <li>Azure: App Services, WebJobs, Functions, and the platform beside them</li>
+              <li>Modules and GitOps layering, so environments differ on purpose</li>
+              <li>A layout another engineer can review without a guided tour</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h2>The release</h2>
+            <ul>
+              <li>Azure DevOps, AWS CodePipeline, and Bitbucket Pipelines</li>
+              <li>The same promotion path every time, from the first environment to production</li>
+              <li>Quality gates that can fail a release before it lands</li>
+              <li>Rollback decided before it is needed</li>
+              <li>Application deployment as well as the infrastructure underneath it</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="wrap prose">
-        <h2>HashiCorp certified, and already in production</h2>
-        <p>Neil holds the HashiCorp Certified Terraform Associate credential. The production record is a multi-account AWS organisation and a globally distributed Azure PaaS platform, both governed through modular Terraform and GitOps, plus full AWS environments delivered with Terraform, CodePipeline, and Bitbucket. At Fransystems that is the core of the practice: design, build, and manage both clouds as code.</p>
-        <p>Bringing an existing platform under Terraform is often the more useful engagement. The Azure work that matches this most closely is App Services and WebJobs that were moved under code, with Azure DevOps pipelines for what gets deployed on top. The point is an estate the team can change on purpose.</p>
-        <p>Code follows a decision. If the target shape is still open, start with <a href="architecture.html">architectural advice</a>. If the code also needs to close an access path or a secret-handling gap, that is <a href="security.html">security</a> work in the same change. If you are not sure the current design should be codified as it stands, a <a href="cost.html">cost review</a> can come first.</p>
+        <h2>Already running in production</h2>
+        <p>Fransystems specialists hold the HashiCorp Certified Terraform Associate credential, alongside the wider AWS, Azure, and Cisco qualifications. They have run a multi-account AWS organisation and a globally distributed Azure PaaS platform through modular Terraform and GitOps, and delivered full AWS environments with Terraform, CodePipeline, and Bitbucket. That includes Azure App Services and WebJobs brought under code, with pipelines for what deploys on top, and daily deployments into Ministry of Defence cloud held to some of the strictest security in government.</p>
+        <p>If the target shape is still open, start with <a href="architecture.html">architectural advice</a>. If the code needs to close an access path, that is <a href="security.html">security</a> work in the same change. If the current design should not be copied as it stands, a <a href="cost.html">cost review</a> comes first.</p>
       </div>
     </section>
 
     <section class="callout">
       <div class="wrap">
-        <p>Say whether this is a new build or an estate that needs to come under code. The contact page is the next step.</p>
+        <p>New build, or an estate that should finally live in code. Either way, the contact page is the next step.</p>
         <a class="button" href="contact.html">Contact me</a>
       </div>
     </section>
