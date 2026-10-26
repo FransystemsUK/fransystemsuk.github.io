@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terraform and infrastructure as code | Fransystems DevOps</title>
-  <meta name="description" content="Terraform for a well-architected AWS or Azure estate: resilient, scalable, and deployed the same way every time. Fransystems designs and builds it as code.">
+  <title>Terraform | Fransystems DevOps</title>
+  <meta name="description" content="Terraform for an Amazon or Microsoft setup that can be rebuilt, that stays reliable as you grow, and that is released the same way every time.">
   <meta name="theme-color" content="#0c264c">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,39 +38,39 @@
     <section class="page-hero">
       <div class="wrap">
         <p class="crumb"><a href="index.html">Home</a> / Terraform</p>
-        <h1>A well-architected estate, written in Terraform</h1>
-        <p class="lede">An estate that can be rebuilt from code. The network, the accounts, and the platform stay resilient, and a release follows the same path every time, on AWS and Azure.</p>
+        <h1>Your cloud setup, written down so it can be rebuilt</h1>
+        <p class="lede">The network, the accounts, and the hosting, written down. They stay reliable as you grow, and a release follows the same path every time, on Amazon and Microsoft.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
         <h2>What the code buys you</h2>
-        <p class="narrow">A console build works until the person who clicked it is away. Terraform keeps the well-architected shape: the network, the accounts, and the platform are a reviewed change, not a memory.</p>
+        <p class="narrow">Clicking the setup together works until the person who clicked it is away. Terraform keeps the shape you agreed: the network, the accounts, and the hosting are a reviewed change, not a memory.</p>
         <ul class="facts">
           <li>
             <strong>Resilient</strong>
-            <p>Failure is a known state you can rebuild. Redundancy, boundaries, and the path back are in the design, not invented during the incident.</p>
+            <p>If something fails, there is a known state to rebuild from. The spare capacity and the way back are in the design. They are not invented during the incident.</p>
           </li>
           <li>
             <strong>Scalable</strong>
-            <p>The next account, region, or service is another use of the module. Capacity grows by changing the code, not by copying last quarter’s setup.</p>
+            <p>The next account, country, or service reuses what you already wrote. You grow by editing that, not by copying last quarter’s clicks.</p>
           </li>
           <li>
             <strong>Deployable</strong>
-            <p>One pipeline promotes the change. Development, test, and production follow the same path, so a release is repeatable and a rollback is the previous version. That path is the <a href="pipelines.html">pipeline</a> work.</p>
+            <p>One automatic path takes the change through a test copy and then the live service. A release can be repeated. Undoing it means going back to the previous version. That path is the <a href="pipelines.html">pipeline</a> work.</p>
           </li>
           <li>
             <strong>Secure</strong>
-            <p>Identity, network rules, and secrets are in the review. A hole does not hide in a click nobody documented.</p>
+            <p>Who can log in, what the network allows, and where passwords are kept are part of the review. A hole does not hide in a click nobody wrote down.</p>
           </li>
           <li>
             <strong>Recoverable</strong>
-            <p>The estate can be stood up again from the repository. Disaster recovery is a plan you have already run, not a document from last year.</p>
+            <p>The setup can be stood up again from the files. Recovery is something you have already tried, not a document from last year.</p>
           </li>
           <li>
             <strong>Efficient</strong>
-            <p>What exists is what the code says exists. Idle environments and one-off exceptions show up, which is where the <a href="cost.html">cost</a> work starts.</p>
+            <p>What exists is what the files say exists. Forgotten test systems and one-off exceptions show up, which is where the <a href="cost.html">cost</a> work starts.</p>
           </li>
         </ul>
       </div>
@@ -79,26 +79,26 @@
     <section class="section band">
       <div class="wrap">
         <h2>How Fransystems builds it</h2>
-        <p class="narrow">New platforms, and estates that are still a mixture of consoles and scripts. The result is modular Terraform a second engineer can change, with a pipeline that can refuse a bad release.</p>
+        <p class="narrow">New setups, and ones that are still a mixture of clicks and old scripts. The result is Terraform another person can change, with a release path that can refuse a bad change.</p>
         <div class="split">
           <article class="panel">
-            <h2>The estate</h2>
+            <h2>The setup</h2>
             <ul>
-              <li>Landing zones, networks, and the accounts or subscriptions around them</li>
-              <li>AWS: multi-account layouts, ECS, EKS, Lambda, and the network they sit on</li>
-              <li>Azure: App Services, WebJobs, Functions, and the platform beside them</li>
-              <li>Modules and GitOps layering, so environments differ on purpose</li>
-              <li>A layout another engineer can review without a guided tour</li>
+              <li>How the accounts are laid out, how the network is joined, and the boundaries around them</li>
+              <li>Amazon: several accounts, the services that run the applications, and the network they sit on</li>
+              <li>Microsoft: hosted web apps, background jobs, and the platform beside them</li>
+              <li>Shared building blocks, so a test copy differs from the live service on purpose</li>
+              <li>A layout another person can read without a guided tour</li>
             </ul>
           </article>
           <article class="panel">
             <h2>The release</h2>
             <ul>
               <li>Azure DevOps, AWS CodePipeline, and Bitbucket Pipelines</li>
-              <li>The same promotion path every time, from the first environment to production</li>
-              <li>Quality gates that can fail a release before it lands</li>
-              <li>Rollback decided before it is needed</li>
-              <li>Application deployment as well as the infrastructure underneath it</li>
+              <li>The same path every time, from the first test copy to the live service</li>
+              <li>Checks that can stop a release before customers see it</li>
+              <li>A way back, decided before anyone needs it</li>
+              <li>The application itself, as well as the computers and network underneath it</li>
             </ul>
           </article>
         </div>
@@ -108,14 +108,14 @@
     <section class="section">
       <div class="wrap prose">
         <h2>Already running in production</h2>
-        <p>Fransystems specialists hold the HashiCorp Certified Terraform Associate credential, alongside the wider AWS, Azure, and Cisco qualifications. They have run a multi-account AWS organisation and a globally distributed Azure PaaS platform through modular Terraform and GitOps, and delivered full AWS environments with Terraform, CodePipeline, and Bitbucket. That includes Azure App Services and WebJobs brought under code, with pipelines for what deploys on top, and daily deployments into Ministry of Defence cloud held to some of the strictest security in government.</p>
-        <p>If the target shape is still open, start with <a href="architecture.html">architectural advice</a>. If the code needs to close an access path, that is <a href="security.html">security</a> work in the same change. If the current design should not be copied as it stands, a <a href="cost.html">cost review</a> comes first.</p>
+        <p>Fransystems specialists hold the HashiCorp Certified Terraform Associate credential, alongside the wider Amazon, Microsoft, and Cisco qualifications. They have run an Amazon setup of several accounts, and a Microsoft platform spread across countries, with both written in Terraform. A change is an edit to those files, not a click. They have also built full Amazon environments this way, brought Microsoft’s hosted web apps under the same files, and updated Ministry of Defence cloud every working day, at the strict end of government security.</p>
+        <p>If the target shape is still open, start with <a href="architecture.html">architectural advice</a>. If the written setup needs to close an open door, that is <a href="security.html">security</a> work in the same change. If the current design should not be copied as it stands, a <a href="cost.html">cost review</a> comes first.</p>
       </div>
     </section>
 
     <section class="callout">
       <div class="wrap">
-        <p>New build, or an estate that should finally live in code. Either way, the contact page is the next step.</p>
+        <p>A new build, or a setup that should finally be written down. Either way, the contact page is the next step.</p>
         <a class="button" href="contact.html">Book a free 30-minute consultation</a>
       </div>
     </section>
