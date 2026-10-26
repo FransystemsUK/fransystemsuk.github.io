@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Release pipelines | Fransystems DevOps</title>
+  <meta name="description" content="Fransystems builds the release path from a developer’s laptop to AWS or Azure. The same promotion every time, on Azure DevOps, CodePipeline, or Bitbucket, with a way back if it fails.">
+  <meta name="theme-color" content="#0c264c">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-type">
+          <span class="brand-name">Fransystems</span>
+          <span class="brand-role">DevOps</span>
+        </span>
+        <span class="brand-marks" aria-hidden="true">
+          <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#fff" stroke="#d7dee8"/><path d="M8 20c4.2 6 15.6 6 20 0" fill="none" stroke="#FF9900" stroke-width="2.4" stroke-linecap="round"/><path d="M24 15.5c2.2 1.4 3.4 2.6 4 3.6-2.4.3-3.8 1.4-4.8 2.4" fill="none" stroke="#FF9900" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#fff" stroke="#d7dee8"/><path fill="#0078D4" d="M18 8 27.5 27h-4.4L18 17.4 12.9 27H8.5Z"/><path fill="#50B6FF" d="M18 16.2 21.4 24h-6.8Z"/></svg>
+          <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#fff" stroke="#d7dee8"/><path fill="#5944eb" d="M18 9 27 14 18 19 9 14Z"/><path fill="#7a6bf2" d="M9 14 18 19v8L9 22Z"/><path fill="#3f2dbd" d="M27 14 18 19v8l9-5Z"/></svg>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="devops.html">DevOps</a>
+        <a href="cost.html">Cost analysis</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="security.html">Security</a>
+        <a href="terraform.html">Terraform</a>
+        <a href="pipelines.html" aria-current="page">Pipelines</a>
+        <a href="small-business.html">Small business</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="index.html">Home</a> / Pipelines</p>
+        <h1>Ship without a Friday-night hero</h1>
+        <p class="lede">Terraform describes the estate. A pipeline is how a change gets from a developer’s laptop into that estate, the same way every time, with a way back if it fails.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>The release is a path, not a person</h2>
+        <p class="narrow">If production only updates when one person is free, the business is waiting on that person. A pipeline is the path the change already knows: build, test, promote, and stop if something is wrong. The same path runs on a Tuesday morning and on the evening before a customer demo.</p>
+        <ul class="facts">
+          <li>
+            <strong>Same path</strong>
+            <p>Development, test, and production are promotions of one release, not three different rituals.</p>
+          </li>
+          <li>
+            <strong>A way back</strong>
+            <p>Rollback is the previous version, decided before anyone needs it. A bad release does not become a night of clicking.</p>
+          </li>
+          <li>
+            <strong>A gate</strong>
+            <p>The pipeline can refuse the change. A failed test or a missing check stops it before customers see it.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="wrap">
+        <h2>Where Fransystems already runs this</h2>
+        <p class="narrow">The product name follows the estate you have. The path is the same on each of them.</p>
+        <div class="split">
+          <article class="panel">
+            <h2>The tools</h2>
+            <ul>
+              <li>Azure DevOps, for Azure platforms and for mixed estates that already release from there</li>
+              <li>AWS CodePipeline, where the release belongs next to the AWS account</li>
+              <li>Bitbucket Pipelines, where the source already lives in Bitbucket</li>
+              <li>The application on top of the platform, not only the infrastructure underneath it</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h2>What you stop relying on</h2>
+            <ul>
+              <li>A checklist in someone’s head</li>
+              <li>A release that is different because a different person ran it</li>
+              <li>A production change with no record of what was tested</li>
+              <li>A rollback that starts with a search for last week’s notes</li>
+            </ul>
+          </article>
+        </div>
+        <p class="note">Fransystems specialists already release this way in production, including daily deployments into Ministry of Defence cloud. The estate those releases land on is the <a href="terraform.html">Terraform</a> work. A gate that checks who may change what belongs with <a href="security.html">security</a>. The idea of the path itself is on the <a href="devops.html">DevOps</a> page.</p>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div class="wrap">
+        <p>If a release still depends on one person being free, the first 30 minutes are free.</p>
+        <a class="button" href="contact.html">Book a free 30-minute consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <a class="footer-brand" href="index.html">
+        <img src="assets/logo.png" alt="Fransystems DevOps" width="282" height="267">
+      </a>
+      <div class="footer-copy">
+        <p>Fransystems DevOps. Freelance contracting for AWS and Azure. United Kingdom.</p>
+        <a href="contact.html">Book a free 30-minute consultation</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

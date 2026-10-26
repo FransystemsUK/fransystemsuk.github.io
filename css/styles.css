@@ -186,8 +186,8 @@ a:hover {
   color: var(--navy);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
-  padding: 10px 7px 8px;
+  font-size: 0.84rem;
+  padding: 10px 5px 8px;
   border-bottom: 2px solid transparent;
   white-space: nowrap;
 }
@@ -431,6 +431,10 @@ h3 {
 
 .narrow {
   max-width: 68ch;
+}
+
+.follow-on {
+  margin-top: 56px;
 }
 
 .narrow p,
